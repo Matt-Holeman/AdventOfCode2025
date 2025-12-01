@@ -13,11 +13,11 @@ def solve():
     with open('input.txt') as file:
         lines = [line.rstrip() for line in file]
         for line in lines:
-            num = int(line[1:])
-            dir =  line[0]
+            dial_change = int(line[1:])
+            direction =  line[0]
 
-            for _ in range(num):
-                if dir == 'R':
+            for _ in range(dial_change):
+                if direction == 'R':
                     running_count += 1
                 else:
                     running_count -= 1
